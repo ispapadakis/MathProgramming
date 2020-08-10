@@ -1,0 +1,18 @@
+/* Transportation Problem */
+
+/* Objective function */
+min: +300 S1_D1 +740 S2_D1 +300 S3_D1 +430 S4_D1 +210 S5_D1 +360 S6_D1 +270 S1_D2 +600 S2_D2 +490 S3_D2 +250 S4_D2
+ +830 S5_D2 +290 S6_D2 +460 S1_D3 +540 S2_D3 +380 S3_D3 +390 S4_D3 +470 S5_D3 +400 S6_D3 +800 S1_D4 +380 S2_D4
+ +760 S3_D4 +600 S4_D4 +680 S5_D4 +310 S6_D4;
+
+/* Constraints */
+S1: +S1_D1 +S1_D2 +S1_D3 +S1_D4 <= 8;
+S2: +S2_D1 +S2_D2 +S2_D3 +S2_D4 <= 24;
+S3: +S3_D1 +S3_D2 +S3_D3 +S3_D4 <= 20;
+S4: +S4_D1 +S4_D2 +S4_D3 +S4_D4 <= 24;
+S5: +S5_D1 +S5_D2 +S5_D3 +S5_D4 <= 16;
+S6: +S6_D1 +S6_D2 +S6_D3 +S6_D4 <= 12;
+D1: +S1_D1 +S2_D1 +S3_D1 +S4_D1 +S5_D1 +S6_D1 >= 29;
+D2: +S1_D2 +S2_D2 +S3_D2 +S4_D2 +S5_D2 +S6_D2 >= 41;
+D3: +S1_D3 +S2_D3 +S3_D3 +S4_D3 +S5_D3 +S6_D3 >= 13;
+D4: +S1_D4 +S2_D4 +S3_D4 +S4_D4 +S5_D4 +S6_D4 >= 21;
